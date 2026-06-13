@@ -383,3 +383,37 @@ document.getElementById("progress-bar")
 .style.width = scrolled + "%";
 
 });
+
+/* =====================================
+   MOBILE HAMBURGER MENU
+===================================== */
+
+const menuBtn =
+document.querySelector(".menu-btn");
+
+const navLinks =
+document.querySelector(".nav-links");
+
+if(menuBtn && navLinks){
+
+    menuBtn.addEventListener("click",()=>{
+
+        navLinks.classList.toggle("active");
+
+    });
+
+}
+
+/* Auto Close After Clicking */
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
