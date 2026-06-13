@@ -332,17 +332,10 @@ else if (project === "npk") {
 
 });
 
-particlesJS("particles-js", {
-particles:{
-number:{value:60},
-size:{value:3},
-move:{speed:1},
-line_linked:{
-enable:true,
-opacity:0.1
-}
-}
-});
+
+
+const typingElement =
+document.getElementById("typing");
 
 const text =
 "Robotics & Automation Engineer";
@@ -351,16 +344,18 @@ let i = 0;
 
 function type(){
 
-if(i < text.length){
+    if(!typingElement) return;
 
-document.getElementById("typing")
-.innerHTML += text.charAt(i);
+    if(i < text.length){
 
-i++;
+        typingElement.innerHTML +=
+        text.charAt(i);
 
-setTimeout(type,70);
+        i++;
 
-}
+        setTimeout(type,70);
+
+    }
 
 }
 
