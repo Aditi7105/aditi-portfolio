@@ -224,7 +224,7 @@ else if (project === "npk") {
     <h3>Technologies Used</h3>
 
     <ul>
-        <li>ESP32</li>
+        <li>Arduino Nano</li>
         <li>Embedded Systems</li>
         <li>IoT</li>
         <li>Sensors</li>
